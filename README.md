@@ -12,7 +12,7 @@ L'agent mis en œuvre utilise une architecture RAG (Retrieval-Augmented Generati
 
 ## Structure du Notebook
 
-Le projet est intégralement contenu dans le notebook Jupyter `[Renault_Agent_GenAI_Solution.ipynb]`. Son organisation est la suivante :
+Le projet est intégralement contenu dans le notebook Jupyter `Renault_Agent_GenAI_Solution.ipynb`. Son organisation est la suivante :
 
 * **Partie 0 :** Configuration Globale, Paramètres de Débogage et initialisation du chargement des Variables d'Environnement (notamment la clé API Hugging Face via un fichier `.env`).
 * **Partie 1 :** Installation des Dépendances Python et Importations des bibliothèques.
@@ -39,7 +39,7 @@ Le projet est intégralement contenu dans le notebook Jupyter `[Renault_Agent_Ge
 
 ## Instructions d'Exécution
 
-1.  Ouvrez le fichier `[Renault_Agent_GenAI_Solution.ipynb]` dans Google Colab.
+1.  Ouvrez le fichier `Renault_Agent_GenAI_Solution.ipynb` dans Google Colab.
 2.  **Configuration Initiale :** Assurez-vous que votre fichier `.env` est présent à la racine de l'environnement Colab et contient votre `HUGGINGFACEHUB_API_TOKEN` valide.
 3.  Exécutez les cellules du notebook séquentiellement, de haut en bas.
     * La Partie 2 téléchargera les documents nécessaires.
