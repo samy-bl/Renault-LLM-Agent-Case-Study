@@ -34,7 +34,6 @@ Le projet est intégralement contenu dans le notebook Jupyter `Renault_Agent_Gen
             HUGGINGFACEHUB_API_TOKEN="hf_VOTRE_TOKEN_PERSONNEL_ICI"
             ```
         3.  Le notebook (en Partie 0) chargera automatiquement ce token dans les variables d'environnement au démarrage.
-    * **Important :** N'incluez jamais votre fichier `.env` contenant des clés secrètes dans un dépôt Git. Ajoutez `.env` à votre fichier `.gitignore`.
 * **Paramètres de Débogage :** En Partie 0 du notebook, vous pouvez ajuster les variables `DEBUG_SHOW_CHUNK_DETAILS` (pour voir le détail des chunks RAG) et `SHOW_AGENT_THOUGHTS` (pour voir le raisonnement interne de l'agent) pour une analyse plus fine.
 
 ## Instructions d'Exécution
@@ -46,7 +45,7 @@ Le projet est intégralement contenu dans le notebook Jupyter `Renault_Agent_Gen
     * La première exécution de la Partie 3 (création de l'index FAISS) peut prendre plusieurs minutes (10-30+ min en fonction des ressources Colab). Les exécutions suivantes seront beaucoup plus rapides grâce au chargement de l'index sauvegardé.
 
     > **Note sur l'Index FAISS Précalculé :**
-    > Pour accélérer l'évaluation et les exécutions répétées, un index FAISS précalculé (`faiss_renault_index/`) est inclus dans ce dépôt. Pour l'utiliser, il suffit simplement de dézipper le fichier `faiss_renault_index.zip` (si vous l'avez compressé ainsi pour le dépôt).
+    > Pour accélérer l'évaluation et les exécutions répétées, un index FAISS précalculé (`faiss_renault_index/`) est inclus dans ce dépôt. Pour l'utiliser, il suffit simplement de dézipper le fichier `faiss_renault_index.zip`.
     > * Lors de l'exécution de la Partie 3, le notebook tentera d'abord de charger cet index localement.
     > * Si le dossier `faiss_renault_index/` est présent dans l'environnement Colab (au même niveau que le notebook), il sera chargé, permettant de sauter l'étape longue de création des embeddings.
     > * Si le dossier n'est pas trouvé, le notebook exécutera le processus complet de création et de sauvegarde de l'index.
