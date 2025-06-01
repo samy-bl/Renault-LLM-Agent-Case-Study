@@ -42,19 +42,19 @@ Le projet est intégralement contenu dans le notebook Jupyter `Renault_Agent_Gen
 1.  Ouvrez le fichier `Renault_Agent_GenAI_Solution.ipynb` dans Google Colab.
 2.  **Configuration Initiale :** Assurez-vous que votre fichier `.env` est présent à la racine de l'environnement Colab et contient votre `HUGGINGFACEHUB_API_TOKEN` valide.
 3.  Exécutez les cellules du notebook séquentiellement, de haut en bas.
-    * La Partie 2 téléchargera les documents nécessaires.
+    * La Partie 2 téléchargera les documents sources nécessaires.
     * La première exécution de la Partie 3 (création de l'index FAISS) peut prendre plusieurs minutes (10-30+ min en fonction des ressources Colab). Les exécutions suivantes seront beaucoup plus rapides grâce au chargement de l'index sauvegardé.
+
+    > **Note sur l'Index FAISS Précalculé :**
+    > Pour accélérer l'évaluation et les exécutions répétées, un index FAISS précalculé (`faiss_renault_index/`) est inclus dans ce dépôt. Pour l'utiliser, il suffit simplement de dézipper le fichier `faiss_renault_index.zip` (si vous l'avez compressé ainsi pour le dépôt).
+    > * Lors de l'exécution de la Partie 3, le notebook tentera d'abord de charger cet index localement.
+    > * Si le dossier `faiss_renault_index/` est présent dans l'environnement Colab (au même niveau que le notebook), il sera chargé, permettant de sauter l'étape longue de création des embeddings.
+    > * Si le dossier n'est pas trouvé, le notebook exécutera le processus complet de création et de sauvegarde de l'index.
+    >
+    > Pour forcer la recréation de l'index, supprimez simplement le dossier `faiss_renault_index/` de votre environnement avant d'exécuter la Partie 3.
+
 4.  Les réponses de l'agent aux questions de l'entretien seront affichées en Partie 5, et la comparaison avec les réponses attendues en Partie 6.
 
-**NB**
-### Base Vectorielle (Index FAISS)
-
-Pour accélérer l'évaluation et les exécutions répétées, un index FAISS précalculé (`faiss_renault_index/`) est inclus dans ce dépôt. Pour l'utiliser, il suffit simplement de dézipper le fichier `faiss_renault_index.zip`
-* Lors de l'exécution de la Partie 3, le notebook tentera d'abord de charger cet index localement.
-* Si le dossier `faiss_renault_index/` est présent dans l'environnement Colab (au même niveau que le notebook), il sera chargé, permettant de sauter l'étape longue de création des embeddings.
-* Si le dossier n'est pas trouvé, le notebook exécutera le processus complet de création et de sauvegarde de l'index. Cette opération peut prendre un temps significatif (10-30+ minutes).
-
-Pour forcer la recréation de l'index, supprimez simplement le dossier `faiss_renault_index/` de votre environnement avant d'exécuter la Partie 3.
 
 ## Sorties Attendues
 
