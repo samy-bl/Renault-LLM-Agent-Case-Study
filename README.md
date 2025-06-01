@@ -48,7 +48,6 @@ Le projet est intégralement contenu dans le notebook Jupyter `Renault_Agent_Gen
 
 ## Sorties Attendues
 
-* Logs d'exécution des différentes parties.
 * Affichage formaté des questions et des réponses de l'agent en Partie 5.
 * Génération de fichiers graphiques (ex: `ventes_vehicules_par_an.png`, `renault_vs_cac40_annonces.png`) dans le répertoire Colab pour les questions correspondantes. L'agent confirmera leur création.
 * Affichage de la comparaison entre les réponses de l'agent et les réponses de référence en Partie 6.
