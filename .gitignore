@@ -1,0 +1,51 @@
+# Fichier d'environnement contenant des secrets
+.env
+
+# Cache et fichiers compilés Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Checkpoints des notebooks Jupyter/Colab
+.ipynb_checkpoints/
+
+# Dossiers de machine virtuelle Python (si vous en utilisez localement)
+venv/
+env/
+ENV/
+*/ENV/
+*/venv/
+*/env/
+.venv/
+.env/
+
+# Fichiers de distribution Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Fichiers spécifiques à l'OS
+.DS_Store
+Thumbs.db
+
+# Fichiers de log
+*.log
+
+# Dossiers spécifiques à Colab ou montages Drive à ignorer
+sample_data/
+drive/
+
+# Données temporaires ou volumineuses que le notebook peut régénérer
+# (Optionnel, à décider selon si vous voulez que l'évaluateur les régénère ou les ait directement)
+# Si l'index FAISS est volumineux et toujours recréé par le notebook :
+# faiss_renault_index/
+
+# Si les images PNG sont toujours générées par le notebook :
+# *.png 
+# (Attention: si vous voulez montrer les images générées dans votre dépôt, ne mettez pas cette ligne.
+#  Pour un projet où le code doit générer les sorties, il est courant d'ignorer les sorties générées.)
+
+# Fichiers spécifiques à certains IDE
+.vscode/
+.idea/
