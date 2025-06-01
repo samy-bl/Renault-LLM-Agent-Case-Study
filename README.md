@@ -1,4 +1,4 @@
-# Agent LLM Renault - Cas Pratique d'Entretien Technique
+# Agent LLM Renault - Cas Pratique
 
 Ce projet a été développé en réponse à un cas pratique d'entretien technique. L'objectif principal est la création d'un agent LLM capable d'interroger une base de connaissances multi-sources (documents Renault, données boursières) pour répondre à des questions spécifiques concernant le groupe Renault, son plan stratégique "Renaulution", ses performances financières et ses indicateurs DPEF.
 
